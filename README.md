@@ -1,12 +1,26 @@
-# React + Vite
+# Todo App: <a target="_blank" href="https://todo-app-zeta-puce.vercel.app/login">Visit Here</a>
+username = user@example.co
+<br/>
+password = password
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/user-attachments/assets/623fafe6-c34d-4bf5-a191-c667ef1f019e)
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/9b506ba6-186b-4813-abb6-9b651ebf50fa)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A React-based Todo List application with authentication, protected routes, and localStorage-powered state management using Context API.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[![My Skills](https://skillicons.dev/icons?i=react,bootstrap)](https://skillicons.dev)
+
+## What I'm Most Proud Of:
+1. Built a fully functional Todo App with React, allowing users to add, edit, and delete tasks.
+2. Implemented authentication with protected routes using React Router and Context API.
+3. Used localStorage to persist todos and user authentication state.
+4. Implemented modal confirmation before deleting a todo to prevent accidental deletions.
+5. Added Toastify notification to give instant feedback when a todo is added successfully.
+
+## Challenges Encountered:
+1. Managing authentication state globally – Initially, handling login/logout across components was tricky. Solution: Used Context API to store and update the authentication state.
+2. Protecting routes – Needed to ensure that users couldn’t access the todo list without logging in. Solution: Created a RequireAuth component to wrap protected routes.
+3. Updating todos correctly – Faced issues when updating a todo in the list without affecting others. Solution: Used the map function to update only the targeted todo in the state.
